@@ -1,0 +1,22 @@
+/* src/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add any custom styles below */
+body {
+  padding-top: 4rem;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+html {
+  background-color: #000000;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #000000;
+}
