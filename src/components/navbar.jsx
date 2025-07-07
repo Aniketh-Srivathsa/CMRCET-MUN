@@ -49,7 +49,7 @@ function Navbar() {
           >
             {/* Logo Image */}
             <img 
-              src="images/logo1.png"  // 
+              src="/images/logo1.png"  // 
               alt="CMRCET MUN Logo" 
               className="h-19 w-16 mr-4 rounded-full" 
             />
