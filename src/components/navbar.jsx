@@ -36,8 +36,8 @@ function Navbar() {
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-black/80 backdrop-blur-md py-2 shadow-lg' 
-          : 'bg-black/25 backdrop-blur-sm py-4'
+          ? 'bg-black/90 backdrop-blur-md py-3.5 shadow-lg' 
+          : 'bg-black/25 backdrop-blur-sm py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">
@@ -47,10 +47,17 @@ function Navbar() {
             to="/" 
             className="group flex items-center space-x-2 transition-transform duration-300 hover:scale-105"
           >
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+            {/* Logo Image */}
+            <img 
+              src="images/logo1.png"  // 
+              alt="CMRCET MUN Logo" 
+              className="h-19 w-16 mr-4 rounded-full" 
+            />
+            
+            <span className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
               CMRCET
             </span>
-            <span className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">
+            <span className="text-2xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">
               MUN
             </span>
           </Link>
@@ -62,7 +69,7 @@ function Navbar() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="ml-4 px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
+                  className="ml-4 px-6 py-3 text-lg bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25"
                 >
                   {link.name}
                 </Link>
@@ -72,7 +79,7 @@ function Navbar() {
                   to={link.path}
                   onMouseEnter={() => setActiveHover(index)}
                   onMouseLeave={() => setActiveHover(null)}
-                  className={`relative px-4 py-2 text-base font-medium transition-all duration-300 ${
+                  className={`relative px-4 py-3 text-lg font-medium transition-all duration-300 ${
                     location.pathname === link.path 
                       ? 'text-white' 
                       : 'text-gray-300 hover:text-white'
