@@ -41,7 +41,7 @@ function Home() {
       <section 
         className="min-h-screen flex items-center justify-center px-4 relative bg-fixed"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/bg1.png')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2)), url('/images/bg1.png')`,
           backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
