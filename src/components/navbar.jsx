@@ -36,8 +36,8 @@ function Navbar() {
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-black/90 backdrop-blur-md py-3.5 shadow-lg' 
-          : 'bg-black/25 backdrop-blur-sm py-5'
+          ? 'bg-black/40 backdrop-blur-md py-5 shadow-lg' 
+          : 'bg-black/10 backdrop-blur-sm py-8'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">
