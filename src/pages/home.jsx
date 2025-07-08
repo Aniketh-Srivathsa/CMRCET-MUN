@@ -46,12 +46,12 @@ function Home() {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundColor: '#000000',
-          paddingTop: '55px', // Account for navbar height
+          paddingTop: '55px',
         }}
       >
         <div className="text-center relative z-10 mt-[-80px]"> {/* Compensate for padding */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Welcome to <span className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">CMRCET MUN</span>
+            Welcome to <span className="text-4xl font-bold bg-gradient-to-r from-purple-900 to-blue-400 bg-clip-text text-transparent">CMRCET MUN</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             Join us for an enriching Model United Nations experience
